@@ -9,9 +9,12 @@ keywords = ["", ""]
 description = "add description"
 showFullContent = false
 readingTime = true 
-hideComments = false
+hideComments = true 
+TocTitle = "Table of contents"
+Toc = true
 draft: true
+
 ---
 
-# testing
+# Title 
 

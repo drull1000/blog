@@ -1,6 +1,6 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://drull1000.github.io/'
 languageCode = 'en-us'
-title = 'Drull'
+title = 'Drull - Blog'
 theme = "terminal"
 paginate = 5
 
@@ -15,7 +15,7 @@ paginate = 5
 [languages]
   [languages.en]
     title = "Drull"
-    subtitle = "My blog for sharing knowledge"
+    subtitle = "This is my personal blog where I share some of my tech knowledge."
     keywords = "coding, privacy, FOOS, free and open source, hacking"
     copyright = ""
     menuMore = "Show more"

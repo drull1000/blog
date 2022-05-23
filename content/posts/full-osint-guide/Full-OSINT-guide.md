@@ -10,6 +10,8 @@ description = "A collection of everything I have learned about OSINT from variou
 showFullContent = false
 readingTime = true
 hideComments = true 
+TocTitle = "Table of contents"
+Toc = true
 +++
 
 # How to do OSINT - A brief introduction.

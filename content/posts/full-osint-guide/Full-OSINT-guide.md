@@ -2,7 +2,7 @@
 title = "Full OSINT Guide"
 date = "2022-05-23T10:13:24-03:00"
 author = "Drull"
-authorTwitter = "drull1000" #do not include @
+authorTwitter = "drull1000"
 cover = "./assets/osintCover.jpg"
 tags = ["OSINT", "Cybersecurity", "Hacking"]
 keywords =["OSINT", "Cybersecurity", "Hacking"]
@@ -16,7 +16,7 @@ hideComments = true
 
 This is a collection of everything I have learned about OSINT from various resources over the internet. Be aware that some of the tools presented here may change or stop working with time, which is normal. The most important thing you should get out of this is **to learn the methods used and be able to replicate them.**
 
-The goal of this guide is to show the path one should follow when doing research on a target. The guide is divided in different sections covering a wide range of topics. Each one of them has their own tools that I recommend and use. 
+The goal of this guide is to show the path one should follow when doing research on a target. The guide is divided in different sections covering a wide range of topics. Each one of them has their own tools that I recommend and use.
 
 This page will be updated with time as I find new resources and new tools. Happy hacking.
 
@@ -28,20 +28,20 @@ Open-source intelligence is the collection and analysis of data gathered from op
 
 ## Keeping your data safe
 
-Before starting, it is important to make sure that your data is secure and that you won't reveal your true identity.
+Before starting, it is important to make sure that your data is secure and that you won't reveal your true identity. Ideally, we are not going to interact directly with our target, but it is always essential to stay secure.
 
 ### Password managers
 
-You want to keep the information you are collecting **as private as possible.** order to do that, it is essential to use a password manager like [Bitwarden.](https://bitwarden.com)
+You want to keep the information you are collecting **as private as possible.** In order to do that, it is essential to use a password manager like [Bitwarden.](https://bitwarden.com)
 
 Other tips:
 
 - Generate a strong password and use it for only one account.
 - Enable 2FA.
 - Don't save passwords in browsers.
-- Never answer online security questions truthfully.
+- Never answer online security questions truthfully, since those are vulnerable to social engineering.
 - Avoid using SMS for 2FA.
-- Consider unique usernames
+- Consider unique usernames.
 
 ### ️Secure email
 
@@ -49,31 +49,27 @@ Another significant step is to use a secure email provider that offers encryptio
 
 Other tips:
 
-- Keep Email Address Private
-- Disable Automatic Loading of Remote Content
-- Don't Share Sensitive Data via Email
-- Use Aliasing / Anonymous Forwarding (ex: [SimpleLogin](https://simplelogin.io/?slref=bridsqrgvrnavso))
+- Keep your email address private
+- Disable automatic loading of remote content
+- Don't share sensitive data via email. You can use [onionshare](https://onionshare.org) to share sensitive files.
+- Use aliasing/anonymous forwarding (ex: [SimpleLogin](https://simplelogin.io/?slref=bridsqrgvrnavso))
 
 ### Encryption
 
-Before backing up your data in the cloud, it is critical to encrypt it. For that, you can use [Cryptomator.](https://cryptomator.org)
+Before backing up your data in the cloud, it is encouraged to encrypt it. For that, you can use [Cryptomator.](https://cryptomator.org)
 
 ### Sock Puppets
 
 A sock puppet is a fake identity you assume on the internet so that you don't give out your real data. **This should never link back to your true identity.** Sock puppets should look real and be active online to look more legitimate.
 
-**You must generate a fake profile and add fake data to it.** This data should be the same across all the sock puppets' accounts. Remember: women are better at social engineering. Don't use other people's photos, because that could be easily reverse searched. Use something like [this person does not exist](https://thispersondoesnotexist.com).
+**You must generate a fake profile and add fake data to it.** This data should be the same across all the sock puppets' accounts. Remember: women are better at social engineering. Don't use other people's photos, because that could be easily reverse searched. You can use something like [this person does not exist](https://thispersondoesnotexist.com).
 
 - If it is affordable to you, you should use burner phones and computers to manage the accounts.
 - Use a VPN instead of your real IP address.
 
-### File sharing over tor
-
-For sharing files in the tor network, you can use [onionshare.](https://onionshare.org)
-
 ## Searches
 
-- [Google alerts](https://google.com/alerts) can alert you of new search results.
+Now it's time to talk about search engines and how to better utilize them. When we are searching for something on Google, for example, it is very common to find a bunch of irrelevant and messy results. When we are doing an OSINT investigation, it is important to filter the good results from the bad ones. That's why we use something called search operators.
 
 ### Search operators
 
@@ -93,7 +89,7 @@ There are a number of commands you can use to refine your search results.
 
 - Find subdomains of dogs.com
 
-   `site:dogs.com -www`
+  `site:dogs.com -www`
 
 - More dogs in results
 
@@ -138,6 +134,9 @@ There are a number of commands you can use to refine your search results.
 - Pages that include the phrase "cats [something] dogs"
 
   `cats * dogs`
+  
+Bonus:  
+[Google alerts](https://google.com/alerts) can alert you of new search results for what you are looking for.
 
 ### For people
 
@@ -199,7 +198,6 @@ Other options:
 - subfinder, assetfinder for finding subdomains. CLI.
 - Gowitness: CLI tool for taking screenshots of domains
 
-
 ### For phone numbers
 
 For searching phone numbers, you can first look for them on Google and see what comes out. If you don't get interesting results, try searching with hifens, area codes or even spell the numbers. Play with the syntax. Even a phone emoji 📱 can be useful.
@@ -230,7 +228,6 @@ Other options:
 
 ### For IoT and connected devices
 
-
 You can find vulnerable IoT devices on [shodan.io](https://shodan.io) and find IP addresses, location, open vulnerable ports (such as 3389) and more.
 
 - [wigle.net](https://wigle.net) is a map of wireless networks.
@@ -248,6 +245,8 @@ Other options:
 - [flightradar](https://flightradar24.com)
 
 ## Social media
+
+Social media can be a goldmine for OSINT researchers. It is incredible the amount of data someone can get from a specific person just by looking at their profile. When analyzing someone's profile, try to look for everything you can. Photos, relatives, workplace, check-ins, friends, interests, etc…
 
 ### Twitter
 
@@ -284,11 +283,11 @@ Other options:
 
 ### Facebook
 
-On Facebook, you can also use the search bar and narrow down some results.
+On Facebook, you can use the search bar and narrow down some results.
 
 Some search operators are:
 
-- Shows photos of lizards
+- Show photos of lizards
 
 `photos of Mark Zuckerberg`
 
@@ -378,6 +377,8 @@ When we are talking about passwords in OSINT, we are talking about finding breac
 - If you are dealing with a hashed password, a good thing to do is to try dehashing it on [hashes.com](https://hashes.com)
 
 ## Frameworks
+
+OSINT frameworks are basically a collection of tools in one place. Some of them are:
 
 - [OSINT framework](https://osintframework.com)
 - Recon-ng

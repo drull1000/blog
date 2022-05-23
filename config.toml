@@ -9,14 +9,14 @@ paginate = 5
   themeColor = "red"
   #change this if I want more item in the navbar
   showMenuItems = 3
-  fullWidthTheme = false
-  centerTheme = false
+  fullWidthTheme = false 
+  centerTheme = true 
 
 [languages]
   [languages.en]
     title = "Drull"
     subtitle = "My blog for sharing knowledge"
-    keywords = ""
+    keywords = "coding, privacy, FOOS free and open source, hacking"
     copyright = ""
     menuMore = "Show more"
     readMore = "Read more"

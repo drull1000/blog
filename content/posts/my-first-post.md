@@ -15,3 +15,4 @@ hideComments = false
 # This is my first post
 
 Testing hugo.
+![[../assets/cyberpunkpfp.png]](../assets/cyberpunkpfp.png)

@@ -16,7 +16,7 @@ paginate = 5
   [languages.en]
     title = "Drull"
     subtitle = "My blog for sharing knowledge"
-    keywords = "coding, privacy, FOOS free and open source, hacking"
+    keywords = "coding, privacy, FOOS, free and open source, hacking"
     copyright = ""
     menuMore = "Show more"
     readMore = "Read more"

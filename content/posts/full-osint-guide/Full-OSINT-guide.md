@@ -66,6 +66,7 @@ A sock puppet is a fake identity you assume on the internet so that you don't gi
 
 **You must generate a fake profile and add fake data to it.** This data should be the same across all the sock puppets' accounts. Remember: women are better at social engineering. Don't use other people's photos, because that could be easily reverse searched. You can use something like [this person does not exist](https://thispersondoesnotexist.com).
 
+- Sock puppets are of extreme importance in case you are investigating dangerous people.
 - If it is affordable to you, you should use burner phones and computers to manage the accounts.
 - Use a VPN instead of your real IP address.
 
@@ -137,14 +138,26 @@ There are a number of commands you can use to refine your search results.
 
   `cats * dogs`
   
-Bonus:  
-[Google alerts](https://google.com/alerts) can alert you of new search results for what you are looking for.
+Bonus:
+- [Google alerts](https://google.com/alerts) can alert you of new search results for what you are looking for.
+- [Google Hacking Database](https://www.exploit-db.com/google-hacking-database) can provide you a list of interesting combinations using search operators.
+- [Dorksearch](https://dorksearch.com/) for faster google dorking.
 
 ### For people
 
 If you are looking for a specific person, a good way to start is to look for the person's name on a search engine. If you want something more specific, you can go over to [whitepages](https://whitepages.com) or [truepeoplesearch](https://truepeoplesearch.com), although these websites are more focused on the USA.
 
-- If you want to pull out voting records of people, you can use something like [Voterrecords](https://voterrecords.com)
+- If you want to pull out voting records of people, you can use something like [Voterrecords](https://voterrecords.com) and [politicalmoneyline](https://www.politicalmoneyline.com/) to try finding donations to public parties.
+
+- Look for relatives and friends of the target, since these people might post additional information online.
+
+- [scamdigger](https://scamdigger.com/) helps you find if a person your are looking for is in reality a scammer.
+
+- Try finding aliases and alternative names of the target and so research on them.
+
+- You can check death records to see if a person is impersonating someone else who has already died.
+
+- [statefarm](https://apps.statefarm.com/lite-auth/view-insurance-card) If you have the target's phone number and date of birth to see if they have vehicles under state farm and insurance. It also shows a partially redacted email address.
 
 Other options:
 
@@ -153,7 +166,22 @@ Other options:
 - [webmii](https://webmii.com)
 - [thatsthem](https://thatsthem.com)
 - [xlek](https://xlek.com) aka cubib
-- [backmetodos](https://t.me/Blackmetodos)
+- [blackbookonline](https://www.blackbookonline.info/)
+- [pipl](https://pipl.com/) - paid/personal information required
+- [findagrave](https://findagrave.com/)
+- [ancestry](https://www.ancestry.com/search/collections/60525/)
+
+Family trees
+- [FamilySearch](https://www.familysearch.org/tree/overview)
+- [FamilyTree](https://www.familytree.com/)
+- [Geni](https://www.geni.com/)
+
+### For criminal records
+
+- [ncsc](https://ncsc-search.squiz.cloud/s/search.html?collection=ncsc-meta&profile=_default&query=public%20records) has a ton of court records.
+- [nsopv](https://www.nsopw.gov/) to find sex offender records.
+- [Federal Bureau of Prisons](https://www.bop.gov/inmateloc/) Locate the whereabouts of a federal inmate incarcerated from 1982 to the present.
+- [hotgunz](https://www.hotgunz.com/) find if a firearm is stolen or not.
 
 ### For businesses
 
@@ -171,6 +199,9 @@ If you are doing OSINT on a business, the first place to look at is their websit
 
 - [indeed](https://indeed.com) is useful to see what skills employees need to work in a specific company.
 
+- [opencorporates](https://opencorporates.com/) for global searches and find officers.
+
+
 ### For websites
 
 Some data you can extract from websites are: technologies used, IP addresses, who is hosting it, subdomains, etc…
@@ -187,15 +218,20 @@ Some data you can extract from websites are: technologies used, IP addresses, wh
 
 - Some websites might have some subdomains online that shouldn't be available to the public. You can use search operators to look for some subdomains like “dev”, “forums”, “admin”, "adm", "VPN" by subtracting www and adding inurl: URL. You can use sublist3r, OWASP Amass and [crt.sh](https://crt.sh) to list subdomains of a website
 
-- [Wayback](https://web.archive.org) machine can show you old versions of the website.
+- [Wayback machine](https://web.archive.org) can show you old versions of the website.
 
 - On Google, you can open the cached website by clicking on the arrow next to the link.
 
 - [BuiltWith](https://builtwith.com/) to find the technologies used.
 
+- [spiderfoot](https://www.spiderfoot.net/) is a software that allows you to scan a website.
+
+- [HTtrack](https://www.httrack.com/) clones a website. Useful to keep an offline copy.
+
 Other options:
 
 - [domaintools](https://whois.domaintools.com)
+- [urlscan.io](https://urlscan.io/)
 - [viewdns.info](https://viewdns.info/) a lot of useful tools to analyze websites
 - subfinder, assetfinder for finding subdomains. CLI.
 - Gowitness: CLI tool for taking screenshots of domains
@@ -246,6 +282,10 @@ Other options:
 
 - [flightradar](https://flightradar24.com)
 
+### For license plates
+
+- [findbyplate](https://findbyplate.com/) can find information of a vehicle if you have its license plate.
+
 ## Social media
 
 Social media can be a goldmine for OSINT researchers. It is incredible the amount of data someone can get from a specific person just by looking at their profile. When analyzing someone's profile, try to look for everything you can. Photos, relatives, workplace, check-ins, friends, interests, etc…
@@ -276,11 +316,12 @@ A full list can be found [here](https://developer.twitter.com/en/docs/twitter-ap
 
 Other options:
 
-- [socialbearing](https://socialbearing.com)
+- [socialbearing](https://socialbearing.com) can search based on geolocation.
 - [twitonomy](https://twitonomy.com)
 - [tweetbeaver](https://tweetbeaver.com)
 - [spoonbill](https://spoonbill.io)
 - [tinfoleak](https://tinfoleak.com)
+- [botometer](https://botometer.osome.iu.edu/)
 - Twint CLI tool
 
 ### Facebook
@@ -293,7 +334,9 @@ Some search operators are:
 
 `photos of Mark Zuckerberg`
 
-- You can find an account's ID by looking at the source code of it.
+- Facebook also has OCR features. That means you can find images by searching for the text contained in it.
+
+- You can find an account's ID by looking at the source code of it, or by going to [findmyfbid](https://findmyfbid.me/).
 
 Other options:
 
@@ -309,6 +352,16 @@ Other options:
 
 - [codeofaninja intagram id](https://tools.codeofaninja.com/find-instagram-user-id)
 
+### YouTube
+
+When investigating YouTube videos, it is useful to do some reverse image search on the content we are watching. In order to do that, we can use some tools like the [citizen evidence amnesty usa](https://citizenevidence.amnestyusa.org/) website to pull extra data from the video and get thumbnails to search.
+
+### Reddit
+
+Reddit is a popular place on the internet where a lot of people post a wide range of different topics.
+
+- [resavr](https://www.resavr.com/) and [unddit](https://www.unddit.com/)are tools that allow us to find deleted comments and posts from reddit threads.
+
 ### Snapchat
 
 Snapchat has a [map](https://map.snapchat.com). You can look for snaps in a certain area.
@@ -316,6 +369,8 @@ Snapchat has a [map](https://map.snapchat.com). You can look for snaps in a cert
 ### LinkedIn
 
 LinkedIn is an awesome place to look for connections and work information of someone.
+
+- If you want to find a person's full name, you can install [Revealin](https://github.com/mxrch/revealin) and use it on the terminal.
 
 ## Images
 
@@ -329,6 +384,8 @@ You can look for the image source by using a search engine that has a reverse im
 
 - You can combine it with search operators.
 
+- If your results are not good, you can try using [remove.bg](https://www.remove.bg/) to remove its background and isolate a person in the image.
+
 Other options:
 
 - [TinEye](https://tineye.com)
@@ -339,9 +396,17 @@ EXIF data is metadata that can be viewed from an image. It can reveal location, 
 
 You can use tools such as [metagoofil](https://github.com/laramies/metagoofil) to harvest data from different files.
 
+Other options:
+
+- [pic2map](https://www.pic2map.com/) Shows where the image was taken based on the metadata.
+
 ### Satellite images
 
 If you want to do some physical location OSINT, you should check satellite photos of the location and absorb all you can about the place. Entrances, parking lots, employees and their dress code, badge readers, security, cameras… everything is important.
+
+### Deepfakes
+
+Deepfakes are gaining popularity quick, and they can be used in a bunch of different ways. As they get more real, spotting them becomes harder, so there are tools out there to help us detect deep fakes, such as [deepware](https://deepware.ai/).
 
 ## Credentials discovery
 
@@ -352,6 +417,10 @@ If you want to do some physical location OSINT, you should check satellite photo
 - It is an awesome way to find old accounts that may contain critical information.
 
 - Sherlock is a python CLI tool that looks for usernames.
+
+Other options:
+
+[knowem](https://knowem.com/)
 
 ### Emails
 
@@ -378,6 +447,22 @@ When we are talking about passwords in OSINT, we are talking about finding breac
 
 - If you are dealing with a hashed password, a good thing to do is to try dehashing it on [hashes.com](https://hashes.com)
 
+## Real state
+When investigating real state, there are some tools that can help us get access to public records, information on who is selling it, etc…
+
+Some websites are: [redfin](https://www.redfin.com/), [zillow](https://www.zillow.com/) and [biggerpockets](https://www.biggerpockets.com/). Note that not every house is going to be available on those websites for you to check, but it can be useful in a few cases.
+
+## Deep web
+
+**Take caution when accessing websites in the deep web.** Never reveal your true identity or use the same email to create accounts.
+
+The deep web has a lot of websites that can help you find data breaches and other information that is not indexed in the surface web.
+
+- [exonarator](https://metrics.torproject.org/exonerator.html) allows you to enter an IP address and date to find out whether that address was used as a Tor relay.
+- [ahmia](https://ahmia.fi/) searches hidden services on the deep web. It can be used in the surface.
+- [TheHiddenWiki](https://thehidden.wiki/) has a list of hidden services.
+- [ddosecrets](https://ddosecrets.com/wiki/Distributed_denial_of_secrets) similar to wikileaks.
+
 ## Frameworks
 
 OSINT frameworks are basically a collection of tools in one place. Some of them are:
@@ -386,3 +471,10 @@ OSINT frameworks are basically a collection of tools in one place. Some of them 
 - Recon-ng
 - Maltego
 - Hunchly
+
+## Report writing 
+
+You should write an easy-to-read report containing the information that you found about the target and the steps necessary to get to them. Good reports use a non-technical language should be accessible to anyone. 
+
+- You can add a timeline report logging your steps.
+- Create a profile of your target with quick information found and some links.
